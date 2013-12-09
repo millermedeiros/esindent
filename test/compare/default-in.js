@@ -51,3 +51,35 @@ define(function() {
 // line comment
 x;
 });
+
+
+
+// if statement
+if (true) {
+    doSomething();
+if (false) {
+aintGoingToHappen(true);
+} else {
+        // lorem
+  sure();
+}
+  } else {
+    // ipsum
+nope();
+  }
+
+
+
+
+// TryStatement
+try {
+// foo
+foo()
+} catch (e) {
+// log
+log(e)
+} finally {
+// bar
+bar()
+}
+
