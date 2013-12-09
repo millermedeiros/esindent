@@ -8,6 +8,12 @@ function fn() {
 return [4, 5, [6, 7, 8]];
 }
 
+    function fnAlreadyIndented() {
+          return [4, 5,
+            [6, 7, 8]
+            ];
+    }
+
 var tuples = [
 // comment test
 ["resolve", "done", "bla", "resolved"],
