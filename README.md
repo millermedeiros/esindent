@@ -46,21 +46,15 @@ that needs indentation.
 ```js
 var esi = require('esindent');
 esi.transform(ast, {
-  "value" : "  ",
-  "DoWhileStatement" : 1,
-  "ForStatement" : 1,
-  "ForInStatement" : 1,
-  "FunctionDeclaration" : 1,
-  "FunctionExpression" : 1,
-  "ChainedMemberExpression" : 1,
-  "IfStatement" : 1,
-  "ObjectExpression" : 1,
-  "SwitchCase" : 1,
-  "SwitchStatement" : 1,
-  "TryStatement" : 1,
-  "WhileStatement" : 1,
-  "EmptyStatement" : 0,
-  "TopLevelFunctionBlock" : 1
+  value: '  ',
+  ArrayExpression: 1,
+  BlockStatement: 1,
+  ChainedMemberExpression: 1,
+  MultipleVariableDeclaration: 1,
+  ObjectExpression: 1,
+  SwitchCase: 1,
+  SwitchStatement: 1,
+  EmptyStatement: 0
 });
 
 // to get the result as a string simply call ast.toString()

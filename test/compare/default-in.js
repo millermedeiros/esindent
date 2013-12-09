@@ -103,3 +103,35 @@ foo,
         // bar variable
         bar = 'dolor amet';
 
+
+
+// do while
+
+do {
+console.log(i++)
+} while (i < 100);
+do {
+    i--
+} while (i);
+
+do n--; while (n && foo());
+
+do n--; while (n && foo());
+do ++i; while (amet(i));
+
+
+
+// for
+
+for (; i < n; ++i) {
+// 4
+for (; j > 0; --j) {
+  // 5
+      things[i][j];
+}
+}
+
+// 6
+for (;;) {
+        things[i];
+}
