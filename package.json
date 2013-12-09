@@ -1,0 +1,45 @@
+{
+  "name": "esindent",
+  "version": "0.0.1",
+  "description": "ECMAScript code indenter based on Esprima AST and Rocambole",
+  "main": "lib/esindent.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul test test/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/millermedeiros/esindent.git"
+  },
+  "keywords": [
+    "indent",
+    "code",
+    "esprima",
+    "esformatter",
+    "rocambole",
+    "ast",
+    "javascript",
+    "ecmascript",
+    "formatter"
+  ],
+  "author": "Miller Medeiros <contact@millermedeiros.com> (http://blog.millermedeiros.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/millermedeiros/esindent/issues"
+  },
+  "homepage": "https://github.com/millermedeiros/esindent",
+  "dependencies": {
+    "rocambole": "~0.2.3"
+  },
+  "devDependencies": {
+    "mocha": "https://github.com/millermedeiros/mocha/tarball/latest",
+    "istanbul": "~0.1.46",
+    "chai": "~1.8.1"
+  },
+  "jshintConfig": {
+    "node": true,
+    "eqnull": true
+  }
+}
