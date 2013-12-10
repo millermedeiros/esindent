@@ -31,7 +31,8 @@
   },
   "homepage": "https://github.com/millermedeiros/esindent",
   "dependencies": {
-    "rocambole": "~0.2.3"
+    "rocambole": "~0.2.3",
+    "rocambole-token": "~1.0.0"
   },
   "devDependencies": {
     "mocha": "https://github.com/millermedeiros/mocha/tarball/latest",
