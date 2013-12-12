@@ -61,3 +61,10 @@ prop: "value"
 }
 });
 
+
+x = {
+props: {
+// comment
+x: 1
+}
+};
