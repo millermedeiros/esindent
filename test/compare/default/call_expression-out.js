@@ -9,6 +9,10 @@ function foo() {
   dolor
     // comment
     .amet()
+    // empty line left on purpose to test bug
+
+
+    .amet()
     .maecennas();
 }
 
