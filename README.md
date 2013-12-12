@@ -45,21 +45,39 @@ that needs indentation.
 
 ```js
 var esi = require('esindent');
-esi.transform(ast, {
+esindent.transform(ast, {
   value: '  ',
   ArrayExpression: 1,
-  BlockStatement: 1,
   ChainedMemberExpression: 1,
   MultipleVariableDeclaration: 1,
   ObjectExpression: 1,
   SwitchCase: 1,
   SwitchStatement: 1,
-  EmptyStatement: 0
+  EmptyStatement: 0,
+  ForStatement: 1,
+  IfStatement: 1,
+  FunctionDeclaration: 1,
+  FunctionExpression: 1,
+  TryStatement: 1,
+  DoWhileStatement: 1
 });
 
 // to get the result as a string simply call ast.toString()
 console.log( ast.toString() );
 ```
+
+### esindent.transformNode(node)
+
+Transform node in-place. Will add a single indent for each line inside the
+node. - used internally by `transform()`.
+
+
+### esindent.sanitize(ast)
+
+Remove `WhiteSpace` tokens that are at the beginning of the lines (probably
+from original indent or trailing white spaces). Also remove `Indent` tokens
+that doesn't have the `level` property or that are not preceded by a line
+break.
 
 
 ## License
