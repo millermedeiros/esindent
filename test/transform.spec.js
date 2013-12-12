@@ -6,6 +6,7 @@ var expect = require('chai').expect;
 var rocambole = require('rocambole');
 var _path = require('path');
 var _fs = require('fs');
+var _glob = require('glob');
 
 var esindent = require('../lib/esindent');
 
@@ -37,14 +38,21 @@ describe('esindent.transform()', function() {
 
   describe('default options', function() {
 
-    it('should indent basic nodes', function() {
-      var input = readIn('default');
-      var compare = readOut('default');
-      var ast = rocambole.parse(input);
-      var result = esindent.transform(ast);
-      // return AST and transform it in place
-      expect( result ).to.eql( ast );
-      expect( ast.toString() ).to.equal( compare );
+    var pattern = _path.join(__dirname, './compare/default/*-in.js');
+    _glob.sync(pattern).forEach(function(fileName) {
+
+      var id = fileName.replace(/.+(default\/.+)-in\.js/, '$1');
+
+      it(id, function() {
+        var input = readIn(id);
+        var compare = readOut(id);
+        var ast = rocambole.parse(input);
+        var result = esindent.transform(ast);
+        // return AST and transform it in place
+        expect( result ).to.eql( ast );
+        expect( ast.toString() ).to.equal( compare );
+      });
+
     });
 
   });
