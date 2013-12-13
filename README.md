@@ -71,7 +71,8 @@ console.log( ast.toString() );
 ### esindent.transformNode(node)
 
 Transform node in-place. Will add a single indent for each line inside the
-node. - used internally by `transform()`.
+node. - used internally by `transform()` and by `esformatter` to avoid looping
+through all nodes multiple times.
 
 
 ### esindent.sanitize(ast)
@@ -80,6 +81,14 @@ Remove `WhiteSpace` tokens that are at the beginning of the lines (probably
 from original indent or trailing white spaces). Also remove `Indent` tokens
 that doesn't have the `level` property or that are not preceded by a line
 break.
+
+
+### esindent.setOptions(opts)
+
+Set the indent options. Useful for cases where you want to use
+`transformNode()` or call `transform()` multiple times in a row (so you don't
+need to set the options multiple times). - Used internally by
+`esindent.transform()`.
 
 
 ## License
