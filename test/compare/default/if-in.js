@@ -46,3 +46,13 @@ return;
 }
 }
 
+
+if (bracesOnNewLine)
+{
+  dolor();
+}
+else if (shouldNotIndentBraces)
+{
+  amet();
+}
+

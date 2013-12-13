@@ -46,3 +46,13 @@ function iss7() {
   }
 }
 
+
+if (bracesOnNewLine)
+{
+  dolor();
+}
+else if (shouldNotIndentBraces)
+{
+  amet();
+}
+
