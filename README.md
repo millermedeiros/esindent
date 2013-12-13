@@ -1,5 +1,7 @@
 # esindent
 
+[![Build Status](https://travis-ci.org/millermedeiros/esindent.png?branch=master)](https://travis-ci.org/millermedeiros/esindent)
+
 ECMAScript code indenter based on Esprima AST
 
 **work in progress**
