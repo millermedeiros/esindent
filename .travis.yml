@@ -4,3 +4,12 @@
  script:
    - "npm test"
    - "npm run-script lint"
+ notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#esformatter"
+    on_success: always
+    on_failure: always
+    use_notice: true
+    skip_join: true
+
