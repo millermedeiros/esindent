@@ -68,12 +68,6 @@ esindent.transform(ast, {
 console.log( ast.toString() );
 ```
 
-### esindent.transformNode(node)
-
-Transform node in-place. Will add a single indent for each line inside the
-node. - used internally by `transform()` and by `esformatter` to avoid looping
-through all nodes multiple times.
-
 
 ### esindent.sanitize(ast)
 
