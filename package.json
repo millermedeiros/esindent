@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/millermedeiros/esindent",
   "dependencies": {
-    "rocambole": "~0.2.3",
+    "rocambole": "~0.3",
     "rocambole-token": "~1.0",
     "rocambole-node": "~1.0",
     "mout": "~0.8.0"
