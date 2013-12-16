@@ -4,7 +4,7 @@
 
 ECMAScript code indenter based on Esprima AST
 
-**work in progress**
+**this project is deprecated, use [esformatter](https://github.com/millermedeiros/esformatter/) instead**
 
 ---
 
