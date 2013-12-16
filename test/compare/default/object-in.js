@@ -68,3 +68,46 @@ props: {
 x: 1
 }
 };
+
+
+// issue #4
+Ext.define('VMS.model.User', {
+extend: 'Ext.data.Model',
+idProperty: 'UserID',
+fields: [
+{
+name: 'UserID',
+type: 'int'
+},
+{
+name: 'FirstName',
+type: 'string'
+},
+{
+name: 'LastName',
+type: 'string'
+}
+]
+});
+
+// this should be indented since property is on a separate line
+Ext
+.define('VMS.model.User', {
+extend: 'Ext.data.Model',
+idProperty: 'UserID',
+fields: [
+{
+name: 'UserID',
+type: 'int'
+},
+{
+name: 'FirstName',
+type: 'string'
+},
+{
+name: 'LastName',
+type: 'string'
+}
+]
+});
+
