@@ -1,6 +1,6 @@
 {
   "name": "esindent",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "ECMAScript code indenter based on Esprima AST and Rocambole",
   "main": "lib/esindent.js",
   "directories": {
